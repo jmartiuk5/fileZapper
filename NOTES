@@ -1,0 +1,32 @@
+
+
+This are my notes for my new program i am starting
+            *************These are some python modules i need********************
+            os.path.join(path, *paths):
+            
+            this module will join the paths on any system so they are seamless.
+            Join one or more path components intelligently. The return value is 
+            the concatenation of path and any members of *paths with exactly one 
+            directory separator (os.sep) following each non-empty part except the 
+            last, meaning that the result will only end in a separator if the last 
+            part is empty. If a component is an absolute path, all previous components 
+            are thrown away and joining continues from the absolute path component.
+
+            os.path.walk(path, visit, arg):
+
+            This one traverse the file system through all directories and sub
+            directoris.Calls the function visit with arguments (arg, dirname, names) 
+            for each directory in the directory tree rooted at path (including path 
+            itself, if it is a directory). The argument dirname specifies the visited 
+            directory, the argument names lists the files in the directory (gotten 
+            from os.listdir(dirname)). The visit function may modify names to influence 
+            the set of directories visited below dirname, e.g. to avoid visiting 
+            certain parts of the tree. (The object referred to by names must be 
+            modified in place, using del or slice assignment.)
+                
+            ++Keywords for path styles++
+            
+            posixpath for UNIX-style paths
+            ntpath for Windows paths
+            macpath for old-style MacOS paths
+            os2emxpath for OS/2 EMX paths
