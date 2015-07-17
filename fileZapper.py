@@ -1,16 +1,18 @@
 import os
 import sys
 import re
+
+
+count = 0
                     #DONT GIVE UP!!!
 #find a module to go through my files
-for root, dirs, files in traverse:                       # os.walk('/Users/', topdown=True):
-    if match:
-        print match.group()
-    for name in files:
-        print os.path.join(root, name)
-    for name in dirs:
-        print os.path.join(root, name)
+for root, dirs, files in os.walk('/Users/', topdown=True):
+    for file in files:
+        if file.endswith('.torrent'):
+           count += 1
+           print os.path.join(root, file)
 
+print 'your torrent file count is', count
 
 
 #find another module to check the extensions on the files
