@@ -2,8 +2,6 @@ import os
 import sys
 import re
                     #DONT GIVE UP!!!
-match = compile('*.py*', traverse)
-traverse = os.walk('/Users/', topdown=True)
 #find a module to go through my files
 for root, dirs, files in traverse:                       # os.walk('/Users/', topdown=True):
     if match:
