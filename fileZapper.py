@@ -19,8 +19,17 @@ print 'your torrent file count is', count
 
 
 #Write code that removes all files with supplied extension
+#TODO Add this logic to program to do the removing
+# if size == 2578 or size == 2565:
+    # print 'T-Mobile:',thefile
+    # os.remove(thefile)
+    # continue
 
-
+# if len(lines) == 3 and lines[2].startswith('Sent from my iPhone'):
+#     print 'iPhone:', thefile
+#     os.remove(thefile)
+#     continue
+#
 #Last but not least refine and remaster program
 
 

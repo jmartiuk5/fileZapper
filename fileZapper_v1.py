@@ -26,8 +26,13 @@ if choice.lower() == 'y':
             if filename.endswith(rec):
                 thefile = os.path.join(root, filename)
                 print os.path.getsize(thefile), thefile
+                filerange = raw_input('please choose a file size range to continue')
+                pass
 elif choice.lower() == 'n':
-    print 'yeaaaa boooy'
+    raw_input
+    pass
+
+
 
 
 # filezapper should then compile a list of filtered files
